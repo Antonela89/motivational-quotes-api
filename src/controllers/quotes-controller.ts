@@ -31,7 +31,7 @@ export const getQuoteById = (req: Request<{ id: string }>, res: Response): void 
 };
 
 // controlador para crear una frase
-export const creareQuote = (req: Request, res: Response): void => {
+export const createQuote = (req: Request, res: Response): void => {
     // llamar al modelo
     const newQuote = QuotesModel.addQuote(req.body); // obtener los datos del cuerpo de la peticion del usuario
     // retornar la frase
